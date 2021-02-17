@@ -330,7 +330,7 @@ window_construct (YelpWindow *window)
                                      entries, G_N_ELEMENTS (entries), window);
     yelp_view_register_actions (priv->view, G_ACTION_MAP (window));
 
-    priv->vbox_full = gtk_box_new (GTK_ORIENTATION_VERTICAL, 3);
+    priv->vbox_full = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
     gtk_container_add (GTK_CONTAINER (window), priv->vbox_full);
 
     priv->header = gtk_header_bar_new ();
